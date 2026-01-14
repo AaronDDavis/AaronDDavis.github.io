@@ -835,14 +835,24 @@ section,
   margin-bottom: 20px;
 }
 
+.portfolio-details .portfolio-description h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 .portfolio-details .portfolio-description ul {
-  padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.portfolio-details .portfolio-description strong {
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
 }
 
 /*--------------------------------------------------------------

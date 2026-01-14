@@ -47,8 +47,10 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="index.html/about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html/portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i> Skills</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
       </ul>
     </nav>
 
@@ -59,11 +61,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <h1 class="mb-2 mb-lg-0">BTO Management System</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current">BTO Management System</li>
           </ol>
         </nav>
       </div>
@@ -127,19 +129,40 @@
                 <li><strong>Project URL</strong>: <a href="https://github.com/AaronDDavis/bto-management-system">github.com/AaronDDavis/bto-management-system</a></li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Brief Project Summary</h2>
+              <h2>Project Overview</h2>
               <p>
-                Developed a comprehensive, command-line based BTO (Build-To-Order) Management System in Java as part of the SC2002 Object-Oriented Design & Programming course.
-                <br>
-                Key Responsibilities & Features:
-                <ul>
-                  <li>Implemented distinct user roles (Applicant, HDB Officer, HDB Manager) with role-specific functionalities, including project application, staff management, and report generation.</li>
-                  <li>Designed and built a system based on a robust, multi-layered architecture (Presentation, Business Logic, Data Access) to ensure separation of concerns.</li>
-                  <li>Applied core SOLID principles and design patterns (Factory, Template Method) to create a maintainable, scalable, and extensible codebase.</li>
-                </ul>
-                <br>
-                This project demonstrates strong skills in Java development, object-oriented architecture, and data persistence using file I/O.
+                Command-line application for managing Singapore's Build-To-Order (BTO) public housing operations, developed as a demonstration of enterprise software architecture principles. The system handles applicant management, staff workflows, and administrative reporting through a layered architecture.
+              </p>
+
+              <h2>Technical Implementation</h2>
+              <p>
+                <strong>Architecture:</strong> Built using the Entity-Control-Boundary (ECB) pattern to enforce strict separation between presentation (CLI), business logic (controllers), and data persistence (custom CSV-based storage).
+              </p>
+              
+              <p>
+                <strong>Key Engineering Contributions:</strong>
+              </p>
+              <ul>
+                <li>
+                  <strong>Custom Persistence Engine:</strong> Engineered an in-memory database that parses CSV files into relational object graphs, implementing manual data binding to enforce referential integrity without a traditional database.</li>
+                <li>
+                  <span><strong>Design Patterns:</strong> Applied Template Method pattern for consistent UI rendering across entity types, and Factory pattern for object creation, ensuring extensibility and reducing code duplication.
+                  </span>
+                </li>
+                <li>
+                  <strong>Role-Based Access Control:</strong> Implemented distinct user roles (Applicant, Officer, Manager) with role-specific functionalities and permissions.</li>
+                <li>
+                  <strong>SOLID Principles:</strong> Applied Dependency Inversion by coding to interfaces, allowing the data storage mechanism to be swapped without breaking business logic.</li>
+              </ul>
+
+              <p>
+                <strong>Technologies:</strong> Java, CSV-based persistence, Object-Oriented Design
               </p>
             </div>
           </div>

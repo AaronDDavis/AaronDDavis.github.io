@@ -61,11 +61,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Team Allocation Simulator</h1>
+        <h1 class="mb-2 mb-lg-0">Project Storage</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Team Allocation Simulator</li>
+            <li class="current">Project Storage</li>
           </ol>
         </nav>
       </div>
@@ -100,11 +100,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/team-1.png" alt="">
+                  <img src="assets/img/portfolio/ps-1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/team-2.png" alt="">
+                  <img src="assets/img/portfolio/ps-2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ps-3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ps-4.jpg" alt="">
                 </div>
 
               </div>
@@ -114,11 +122,12 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Team Allocation Simulator</h3>
+              <h3>Project Storage - P2P Marketplace</h3>
               <ul>
-                <li><strong>Category</strong>: Python, Constraint Satisfaction, Heuristic Algorithms</li>
-                <li><strong>Project date</strong>: October, 2024</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/AaronDDavis/team-allocation-simulator">github.com/AaronDDavis/team-allocation-simulator</a></li>
+                <li><strong>Category</strong>: Full-Stack Web Application</li>
+                <li><strong>Project date</strong>: December, 2025</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/AaronDDavis/project_storage">github.com/AaronDDavis/project_storage</a></li>
+                <li><strong>Live Demo</strong>: <a href="https://project-storage-app-ybvk.onrender.com/user/login">https://project-storage-app-ybvk.onrender.com/user/login</a></li>
               </ul>
             </div>
           </div>
@@ -129,37 +138,37 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Overview</h2>
               <p>
-                Constraint satisfaction engine that partitions 6,000+ students across 120 tutorial groups into balanced, diverse teams. The system must satisfy multiple competing constraints simultaneously while handling real-world edge cases like skewed demographics and uneven distributions.
+                Peer-to-peer storage marketplace connecting space renters with individuals needing storage. Built as a full-stack demonstration of service-oriented architecture, algorithmic resource allocation, and production deployment practices.
               </p>
-
-              <h2>The Challenge</h2>
+              
+              <h2>Key Technical Contributions</h2>
+              
+              <h3>Architectural Refactor: Service-Layer Pattern</h3>
               <p>
-                Creating "fair" teams isn't just random assignment — it requires balancing:
+                Transitioned from monolithic "Fat Model/View" to <strong>Service-Oriented Architecture</strong>. Business logic extracted into dedicated service modules, enforcing Separation of Concerns and enabling framework-agnostic testing.
               </p>
+              
+              <h3>Design Patterns</h3>
               <ul>
-                <li><strong>Team Size Constraints:</strong> 4–10 students per team (must handle uneven division)</li>
-                <li><strong>School Diversity:</strong> Prevent majority dominance</li>
-                <li><strong>Gender Balance:</strong> Aim for mixed-gender teams where possible</li>
-                <li><strong>Academic Balance:</strong> Distribute CGPA evenly (prevent clustering of high/low performers)</li>
+                <li><strong>Strategy Pattern:</strong> Pluggable allocation engine supporting Best-Fit, First-Fit algorithms without modifying booking workflows.</li>
+                <li><strong>State Pattern:</strong> Finite State Machines managing lifecycles with validated transitions.</li>
+                <li><strong>Composite Pattern:</strong> <code>Space → Rack → Shelf</code> hierarchy enabling aggregate queries and capacity visualization.</li>
+                <li><strong>Builder Pattern:</strong> Atomic conversion of verified requests into live Spaces (preventing phantom listings).</li>
               </ul>
-
-              <h2>Technical Approach</h2>
+              
+              <h3>Algorithmic Optimization</h3>
               <p>
-                <strong>Constraint Satisfaction Algorithm:</strong> Engineered a randomized allocation engine that iteratively attempts groupings while validating against multi-dimensional criteria. The algorithm detects convergence failures (infinite loops) and automatically relaxes specific constraints (e.g., widening acceptable CGPA deviation) to guarantee solution feasibility.
+                Implemented <strong>Best-Fit with Compaction</strong> strategy using Django ORM (Subquery, OuterRef). Algorithm selects racks with smallest excess capacity to minimize fragmentation, leaving larger contiguous blocks available for future bookings.
+              </p>
+              
+              <h3>Production Deployment</h3>
+              <p>
+                Follows <strong>12-Factor App</strong> methodology: CI/CD on Render, environment-based configuration, automated migrations, Gunicorn + WhiteNoise serving, PostgreSQL production database.
               </p>
               
               <p>
-                <strong>Heuristic Optimization:</strong> Implemented "Best Fit" logic prioritizing teams whose average CGPA deviates minimally from the population mean, ensuring balanced academic distribution without manual intervention.
+                <strong>Technologies:</strong> Django 5.0, PostgreSQL, Bootstrap 5, Gunicorn, Render (PaaS)
               </p>
-              
-              <p>
-                <strong>Dynamic Constraint Relaxation:</strong> When strict constraints cannot be satisfied (e.g., extreme gender imbalance in a tutorial group), the system intelligently loosens specific rules while maintaining others, preventing failure in edge cases.
-              </p>
-              
-              <p>
-                <strong>Technologies:</strong> Python (csv, random modules), Constraint Satisfaction, Heuristic Algorithms
-              </p>
-
             </div>
           </div>
 
