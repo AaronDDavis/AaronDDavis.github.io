@@ -4,189 +4,442 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Aaron Davis</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Project Storage — Aaron Davis</title>
+  <meta name="description" content="P2P storage marketplace built with Django 5, PostgreSQL, and service-oriented architecture.">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/project-storage.css" rel="stylesheet">
+  <link href="assets/css/design-flow.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpg" alt="Aaron Davis" class="img-fluid rounded-circle">
     </div>
-
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Aaron Davis</h1>
     </a>
-
     <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/aaron-daniel-davis" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/AaronDDavis" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/aaron-daniel-davis" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/AaronDDavis" class="github" title="GitHub"><i class="bi bi-github"></i></a>
     </div>
-
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i> Skills</a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="index.html#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#experience"><i class="bi bi-briefcase navicon"></i>Experience</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i>Skills</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-code-square navicon"></i>Projects</a></li>
+        <li><a href="index.html#achievements"><i class="bi bi-award navicon"></i>Achievements</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">Project Storage</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Projects</a></li>
             <li class="current">Project Storage</li>
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <section class="pd-content section">
+      <div class="container">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <a href="index.html#portfolio" class="pd-back"><i class="bi bi-arrow-left"></i> All Projects</a>
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ps-1.png" alt="">
+          <!-- ── Left: slider ── -->
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="pd-slider-wrap">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  { "loop": true, "speed": 800, "autoplay": { "delay": 5000 }, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide"><img src="assets/img/portfolio/ps-1.png" alt="Project Storage — listing view"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/ps-2.png" alt="Project Storage — booking flow"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/ps-3.png" alt="Project Storage — rack visualisation"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/ps-4.png" alt="Project Storage — admin"></div>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ps-2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ps-3.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ps-4.png" alt="">
-                </div>
-
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Storage - P2P Marketplace</h3>
+          <!-- ── Right: info card ── -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pd-info-card">
+              <div class="pd-project-title">Project Storage - P2P Marketplace</div>
+
+              <div class="pd-meta-row">
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Category</span>
+                  <span class="pd-meta-value">Full-Stack Web Application</span>
+                </div>
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Completed</span>
+                  <span class="pd-meta-value">December 2025</span>
+                </div>
+                <!--
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Repository</span>
+                  <span class="pd-meta-value">
+                    <a href="https://github.com/AaronDDavis/project_storage" target="_blank" rel="noopener">github.com/AaronDDavis/<wbr>project_storage</a>
+                  </span>
+                </div>
+                -->
+              </div>
+
+              <!--
+              <a href="https://project-storage-app-ybvk.onrender.com/user/login" target="_blank" rel="noopener" class="pd-cta-btn pd-cta-secondary">
+                <i class="bi bi-box-arrow-up-right"></i> View Live Demo
+              </a>
+              -->
+              <a href="https://github.com/AaronDDavis/project_storage" target="_blank" rel="noopener" class="pd-cta-btn pd-cta-primary">
+                <i class="bi bi-github"></i> View on GitHub
+              </a>
+
+              <div class="pd-tech-list">
+                <span class="pd-tech-pill">Django 5.0</span>
+                <span class="pd-tech-pill">PostgreSQL</span>
+                <span class="pd-tech-pill">Bootstrap 5</span>
+                <span class="pd-tech-pill">Gunicorn</span>
+                <span class="pd-tech-pill">Render (PaaS)</span>
+                <span class="pd-tech-pill">CI/CD</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+
+        <!-- ── Overview ── -->
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-lg-8">
+            <div class="pd-section-label">Overview</div>
+            <h2 class="pd-section-heading">Five versions of deliberate over-engineering</h2>
+            <p class="pd-lead">
+              Project Storage, a peer-to-peer storage marketplace, is an "Uber for Storage" connecting people with unused space to those who need it. The product concept is simple. But what makes this worth reading is the engineering beneath it: Version 5 represents a full architectural refactor from a 'Fat Model/View' monolith to a Service-Layer Architecture with SOLID compliance, a pluggable allocation engine, independent finite state machines, and a production deployment following Twelve-Factor App methodology.
+            </p>
+            <p class="pd-lead" style="margin-top: 14px;">
+              The application has three user roles:
               <ul>
-                <li><strong>Category</strong>: Full-Stack Web Application</li>
-                <li><strong>Project date</strong>: December, 2025</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/AaronDDavis/project_storage">github.com/AaronDDavis/project_storage</a></li>
-                <li><strong>Live Demo</strong>: <a href="https://project-storage-app-ybvk.onrender.com/user/login">https://project-storage-app-ybvk.onrender.com/user/login</a></li>
+              <li><strong>Renter</strong> (lists space),</li>
+              <li><strong>Lessee</strong> (books space), and</li>
+              <li><strong>Admin</strong> (verifies listings).</li>
               </ul>
+              Each has distinct dashboards, permissions, and workflows.
+            </p>
+          </div>
+
+          <!-- Demo credentials -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="80">
+            <div class="pd-demo-card">
+              <div class="pd-demo-title"><i class="bi bi-play-circle me-2"></i>Try the Live Demo</div>
+              <div class="pd-demo-subtitle">Three roles to explore:</div>
+              <div class="pd-demo-cred">
+                <span class="pd-demo-role">Admin</span>
+                <span class="pd-demo-pair"><code>admin</code> / <code>demo1234</code></span>
+                <span class="pd-demo-note">Verification queue</span>
+              </div>
+              <div class="pd-demo-cred">
+                <span class="pd-demo-role">Renter</span>
+                <span class="pd-demo-pair"><code>renter</code> / <code>demo1234</code></span>
+                <span class="pd-demo-note">Space visualization</span>
+              </div>
+              <div class="pd-demo-cred">
+                <span class="pd-demo-role">Lessee</span>
+                <span class="pd-demo-pair"><code>lessee</code> / <code>demo1234</code></span>
+                <span class="pd-demo-note">Booking algorithm</span>
+              </div>
+              <a href="https://project-storage-app-ybvk.onrender.com/user/login" target="_blank" rel="noopener" class="pd-cta-btn pd-cta-secondary" style="margin-top: 14px;">
+                <i class="bi bi-box-arrow-up-right"></i> Open Live Demo
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="row gy-4 mt-1">
-          <div class="col-lg-12">
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Project Overview</h2>
-              <p>
-                Peer-to-peer storage marketplace connecting space renters with individuals needing storage. Built as a full-stack demonstration of service-oriented architecture, algorithmic resource allocation, and production deployment practices.
-              </p>
-              
-              <h2>Key Technical Implementation</h2>
-              
-              <h3>Architectural Refactor: Service-Layer Pattern</h3>
-              <p>
-                Transitioned from monolithic "Fat Model/View" to <strong>Service-Oriented Architecture</strong>. Business logic extracted into dedicated service modules, enforcing Separation of Concerns and enabling framework-agnostic testing.
-              </p>
-              
-              <h3>Design Patterns</h3>
-              <ul>
-                <li><strong>Strategy Pattern:</strong> Pluggable allocation engine supporting Best-Fit, First-Fit algorithms without modifying booking workflows.</li>
-                <li><strong>State Pattern:</strong> Finite State Machines managing lifecycles with validated transitions.</li>
-                <li><strong>Composite Pattern:</strong> <code>Space → Rack → Shelf</code> hierarchy enabling aggregate queries and capacity visualization.</li>
-                <li><strong>Builder Pattern:</strong> Atomic conversion of verified requests into live Spaces (preventing phantom listings).</li>
-              </ul>
-              
-              <h3>Algorithmic Optimization</h3>
-              <p>
-                Implemented <strong>Best-Fit with Compaction</strong> strategy using Django ORM (Subquery, OuterRef). Algorithm selects racks with smallest excess capacity to minimize fragmentation, leaving larger contiguous blocks available for future bookings.
-              </p>
-              
-              <h3>Production Deployment</h3>
-              <p>
-                Follows <strong>12-Factor App</strong> methodology: CI/CD on Render, environment-based configuration, automated migrations, Gunicorn + WhiteNoise serving, PostgreSQL production database.
-              </p>
-              
-              <p>
-                <strong>Technologies:</strong> Django 5.0, PostgreSQL, Bootstrap 5, Gunicorn, Render (PaaS)
-              </p>
+        <!-- Version evolution strip -->
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-12">
+            <div class="pd-section-label" style="margin-bottom: 14px;">Version History</div>
+            <div class="pd-version-strip">
+              <div class="pd-version-item">
+                <div class="pd-version-tag">v1 – v2</div>
+                <div class="pd-version-desc">
+                  Prototype + <code>Space → Rack → Shelf</code> hierarchy.<br>
+                  State-driven booking system.
+                </div>
+              </div>
+              <div class="pd-version-arrow">→</div>
+              <div class="pd-version-item">
+                <div class="pd-version-tag">v3</div>
+                <div class="pd-version-desc">
+                  Admin verification workflow.<br>
+                  <code>TextChoices</code> FSM for Space/Booking status.
+                </div>
+              </div>
+              <div class="pd-version-arrow">→</div>
+              <div class="pd-version-item">
+                <div class="pd-version-tag">v4</div>
+                <div class="pd-version-desc">
+                  Prelistings app. Two-phase <code>InstallationRequest</code> verification workflow.<br>
+                  Builder Pattern.
+                </div>
+              </div>
+              <div class="pd-version-arrow">→</div>
+              <div class="pd-version-item pd-version-current">
+                <div class="pd-version-tag">v5 ★</div>
+                <div class="pd-version-desc">
+                  Service-layer refactor.<br>
+                  SOLID compliance. Custom exceptions. Centralized constants.<br>
+                  Production-grade deployment.
+                </div>
+              </div>
             </div>
           </div>
+        </div>
 
+        <div class="pd-divider"></div>
+
+        <!-- ── Architecture ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Architecture</div>
+          <h2 class="pd-section-heading">From Fat Models to a Service Layer</h2>
+          <p class="col-lg-8 pd-section-lead" style="font-size: 15px; color: #475569; line-height: 1.75; margin-bottom: 28px;">
+            Versions 1–4 placed business logic directly in Views and Models. This produced untestable Views (every test required a full HTTP request), bloated Models with non-database logic, and zero reusability across contexts. Version 5 introduced a strict three-layer separation.
+          </p>
+
+          <div class="pd-arch-v5-grid">
+            <div class="pd-arch-v5-layer">
+              <div class="pd-arch-v5-label">Views <span class="pd-arch-v5-file">views.py</span></div>
+              <div class="pd-arch-v5-desc">HTTP protocol handling only. Receives parameters, checks permissions, renders templates. <strong>Delegates all logic to Services.</strong> No business rules here.</div>
+            </div>
+            <div class="pd-arch-v5-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="pd-arch-v5-layer pd-arch-v5-highlight">
+              <div class="pd-arch-v5-label">Services <span class="pd-arch-v5-file">services.py</span></div>
+              <div class="pd-arch-v5-desc">Pure Python classes containing all business logic. Framework-agnostic. Reusable in HTTP views, CLI commands, background jobs, and unit tests without HTTP fixtures.</div>
+              <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
+                <span class="pd-tech-pill">BookingService</span>
+                <span class="pd-tech-pill">BookingStateService</span>
+                <span class="pd-tech-pill">BookingFormService</span>
+                <span class="pd-tech-pill">SpaceService</span>
+                <span class="pd-tech-pill">SpaceLayoutService</span>
+                <span class="pd-tech-pill">InstallationRequestService</span>
+              </div>
+            </div>
+            <div class="pd-arch-v5-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="pd-arch-v5-layer">
+              <div class="pd-arch-v5-label">Models <span class="pd-arch-v5-file">models.py</span></div>
+              <div class="pd-arch-v5-desc">Strictly define the data schema and relationships. No calculation logic, no state transition logic. State is represented via <code>models.TextChoices</code> enums.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- ── Best-Fit Algorithm ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Allocation Strategy</div>
+          <h2 class="pd-section-heading">Best-Fit with Compaction</h2>
+          <p class="col-lg-8 pd-section-lead">
+            When a Lessee books space, the system must select which Rack to assign them to. The goal is to prevent storage fragmentation by leaving large, contiguous blocks available for future bookings rather than scattering small gaps across every rack. This logic lives entirely in <code style="font-size:13px; background:#f1f5f9; color:#0f766e; padding:2px 8px; border-radius:3px;">BookingFormService.get_rack()</code> and can be swapped without touching the booking workflow (Strategy Pattern).
+          </p>
+
+          <div class="pd-flow">
+            <div class="pd-flow-step">
+              <div class="pd-flow-num">1</div>
+              <div class="pd-flow-body"><strong>Quantify potential.</strong> Query all racks in the selected Space, annotating each with its current total available shelf count using Django ORM's <code>Subquery</code> and <code>OuterRef</code>.</div>
+            </div>
+            <div class="pd-flow-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="pd-flow-step">
+              <div class="pd-flow-num">2</div>
+              <div class="pd-flow-body"><strong>Filter by need.</strong> Exclude any rack whose total available shelf count is less than the number of contiguous shelves the booking requires.</div>
+            </div>
+            <div class="pd-flow-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="pd-flow-step">
+              <div class="pd-flow-num">3</div>
+              <div class="pd-flow-body"><strong>Best-fit selection.</strong> Sort remaining racks in ascending order by available shelf count — tightest fit first.</div>
+            </div>
+            <div class="pd-flow-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="pd-flow-step">
+              <div class="pd-flow-num">4</div>
+              <div class="pd-flow-body"><strong>Compaction.</strong> Select <code>.order_by('available_shelves').first()</code> — the rack with the smallest excess capacity. Subsequent logic verifies and marks the specific consecutive shelf block within it.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- ── Key Engineering Contributions ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Key Engineering Contributions</div>
+          <h2 class="pd-section-heading">Where the interesting decisions were made</h2>
+
+          <div class="pd-contrib-grid">
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">01</span>
+              <div class="pd-contrib-title">Service-Layer Architectural Refactor</div>
+              <div class="pd-contrib-body">
+                Transitioned from monolithic Fat Model/View to a three-layer SOA. Business logic extracted into dedicated service modules, enforcing Separation of Concerns. Services are framework-agnostic: the same <code>BookingService</code> can be called from an HTTP view, a management command, or a unit test. No HTTP request required to validate an allocation.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">02</span>
+              <div class="pd-contrib-title">Two Independent State Machines (FSMs)</div>
+              <div class="pd-contrib-body">
+                <strong>BookingStateService</strong> manages <code>BOOKED → ACTIVE → PAST</code>, triggering <code class="hyphenate-none">occupy_&shy;space()</code> and <code>release_space()</code> side effects on transition. <strong>InstallationRequestStateService</strong> manages <code>PENDING → APPROVED → COMPLETED</code>, where <code>COMPLETED</code> is the only valid trigger for the Builder Pattern conversion to a live Space. Invalid transitions are blocked by custom exceptions.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">03</span>
+              <div class="pd-contrib-title">Builder Pattern — Atomic Space Creation</div>
+              <div class="pd-contrib-body">
+                <code class="hyphenate-none">InstallationRequestService.convert_&shy;to_space()</code> acts as Director/Builder: takes a completed <code>InstallationRequest</code> and atomically constructs the full <code>Location → Space → Rack → Shelf</code> hierarchy before deleting the temporary request. This prevents phantom listings: a Space only exists once it's been physically verified and the full object graph is complete.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">04</span>
+              <div class="pd-contrib-title">Pluggable Allocation — Strategy Pattern</div>
+              <div class="pd-contrib-body">
+                The allocation algorithm is decoupled from the booking workflow via the Strategy Pattern. Switching from Best-Fit to First-Fit or Load-Balancing is a change to one method in <code>BookingFormService</code>, not a refactor of the booking view. The current strategy uses ORM-level <code>Subquery</code>/<code>OuterRef</code> annotations for efficiency — no Python-level sorting of large querysets.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">05</span>
+              <div class="pd-contrib-title">Composite Pattern — Space Hierarchy</div>
+              <div class="pd-contrib-body">
+                Storage is modelled as a <code>Space → Rack → Shelf</code> composite hierarchy in <code class= "hyphenate-none">listings/&shy;models.py</code>. This enables aggregate queries (<code>space.total_shelves</code> sums across all racks recursively) and powers the color-coded grid visualization in <code class= "hyphenate-none">SpaceLayout&shy;Service</code>. The visualization logic is extracted into its own service to comply with SRP.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">06</span>
+              <div class="pd-contrib-title">Domain Exception Hierarchy</div>
+              <div class="pd-contrib-body">
+                Custom exception hierarchy replaces generic Django exceptions: <code class= "hyphenate-none">InstallationRequest&shy;Error</code> (base) → <code class= "hyphenate-none">InstallationRequest&shy;ConversionError</code> (specific); <code class= "hyphenate-none">SpaceState&shy;Exception</code>; <code>BookingStatusException</code>. Application code depends on abstract error types, not raw transition logic strings (Dependency Inversion applied to error handling).
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- ── SOLID Principles ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">SOLID Compliance</div>
+          <h2 class="pd-section-heading">Each principle with a file reference</h2>
+
+          <div class="pd-solid-list">
+
+            <div class="pd-solid-item">
+              <div class="pd-solid-letter">S</div>
+              <div class="pd-solid-body">
+                <div class="pd-solid-title">Single Responsibility</div>
+                <div class="pd-solid-desc"><code>Booking</code> model holds state only. <code>BookingService</code> holds calculation logic. <code>BookingStateService</code> holds transition logic. Pricing can change in <code>BookingService</code> without touching <code>models.py</code>. <br>
+                <code>SpaceListView</code> delegates filter logic entirely to <code>SpaceService.get_available_spaces()</code>. The View's only responsibility is HTTP protocol handling.</div>
+              </div>
+            </div>
+
+            <div class="pd-solid-item">
+              <div class="pd-solid-letter">O</div>
+              <div class="pd-solid-body">
+                <div class="pd-solid-title">Open/Closed</div>
+                <div class="pd-solid-desc">New locations and pricing rules are added to <code>listings/constants.py</code> without modifying <code>SpaceService</code> internals. Django CBVs are extended via <code>get_queryset()</code> and <code>get_context_data()</code> hooks. Django's source is never touched.</div>
+              </div>
+            </div>
+
+            <div class="pd-solid-item">
+              <div class="pd-solid-letter">L</div>
+              <div class="pd-solid-body">
+                <div class="pd-solid-title">Liskov Substitution</div>
+                <div class="pd-solid-desc"><code>CustomUser</code> inherits <code>AbstractUser</code> and remains substitutable everywhere Django expects a user object: <code>request.user</code>, <code>ForeignKey</code>, permission checks, while adding domain-specific fields (<code>role</code>, <code>nric_fin</code>).</div>
+              </div>
+            </div>
+
+            <div class="pd-solid-item">
+              <div class="pd-solid-letter">I</div>
+              <div class="pd-solid-body">
+                <div class="pd-solid-title">Interface Segregation</div>
+                <div class="pd-solid-desc">Views compose behavior from small Mixins: <code>SpaceCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView)</code>. No massive "SuperView" base class. Each Mixin adds exactly one capability, and classes import only what they explicitly need.</div>
+              </div>
+            </div>
+
+            <div class="pd-solid-item">
+              <div class="pd-solid-letter">D</div>
+              <div class="pd-solid-body">
+                <div class="pd-solid-title">Dependency Inversion</div>
+                <div class="pd-solid-desc">Business logic depends on abstractions, not concretions. <code>Booking.status</code> uses <code>models.TextChoices</code>. Callers depend on <code>Booking.Status.ACTIVE</code>, not the string <code>'ACTIVE'</code>. Error handling depends on the abstract exception hierarchy, not raw status checks. Allocation strategy objects can be injected into services.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- ── Deployment ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Deployment & DevOps</div>
+          <h2 class="pd-section-heading">Twelve-Factor App on Render</h2>
+
+          <div class="pd-contrib-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num" style="background:#f1f5f9; color:#475569;">IaC</span>
+              <div class="pd-contrib-title">Infrastructure as Code</div>
+              <div class="pd-contrib-body">Deployment logic is version-controlled in <code>build.sh</code>, automating dependency installation, static file collection, and database migrations on every deploy. No manual SSH steps.</div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num" style="background:#f1f5f9; color:#475569;">ENV</span>
+              <div class="pd-contrib-title">Environment Security</div>
+              <div class="pd-contrib-body"><code>SECRET_KEY</code>, <code>DEBUG</code>, and database credentials are decoupled from the codebase via <code>os.environ</code>. <code>dj-database-url</code> auto-switches between SQLite (local) and PostgreSQL (production).</div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num" style="background:#f1f5f9; color:#475569;">SRV</span>
+              <div class="pd-contrib-title">Production Serving</div>
+              <div class="pd-contrib-body">A <code>Procfile</code> declares the entry point, instructing Render to serve via <strong>Gunicorn</strong>. Static files served by <strong>WhiteNoise</strong>. A custom <code>scripts/create_superuser.py</code> auto-provisions admin access during build. No interactive console required.</div>
+            </div>
+
+          </div>
         </div>
 
       </div>
-
-    </section><!-- /Portfolio Details Section -->
+    </section>
 
   </main>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -197,10 +450,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

@@ -1,0 +1,69 @@
+/* Architecture diagram strip */
+.pd-arch-strip {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 28px 0;
+  flex-wrap: wrap;
+}
+
+.pd-arch-layer {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 16px 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.pd-arch-layer .layer-label {
+  font-size: 10px;
+  font-family: var(--mono-font);
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+}
+
+.pd-arch-layer .layer-name {
+  font-family: "DM Serif Display", serif;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.pd-arch-layer .layer-note {
+  font-size: 11px;
+  font-family: var(--mono-font);
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.pd-arch-layer.highlight {
+  border-color: var(--accent-color);
+  background: var(--accent-light);
+}
+
+.pd-arch-layer.highlight .layer-name { color: #0f766e; }
+
+.pd-arch-arrow {
+  font-size: 18px;
+  color: #cbd5e1;
+  padding: 0 6px;
+  flex-shrink: 0;
+}
+
+.pd-arch-constraint{
+  font-size: 12px;
+  font-family: var(--mono-font);
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+.pd-arch-constraint code{
+  font-size:11px;
+  background:#f1f5f9;
+  color:#0f766e;
+  padding:1px 6px;
+  border-radius:3px;
+}

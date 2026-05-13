@@ -4,184 +4,253 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Aaron Davis</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>BTO Management System — Aaron Davis</title>
+  <meta name="description" content="CLI-based public housing management system using ECB architecture and a custom CSV persistence engine.">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/bto.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
-
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpg" alt="Aaron Davis" class="img-fluid rounded-circle">
     </div>
-
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Aaron Davis</h1>
     </a>
-
     <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/aaron-daniel-davis" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/AaronDDavis" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/aaron-daniel-davis" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/AaronDDavis" class="github" title="GitHub"><i class="bi bi-github"></i></a>
     </div>
-
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i> Skills</a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="index.html#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#experience"><i class="bi bi-briefcase navicon"></i>Experience</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i>Skills</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-code-square navicon"></i>Projects</a></li>
+        <li><a href="index.html#achievements"><i class="bi bi-award navicon"></i>Achievements</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">BTO Management System</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Projects</a></li>
             <li class="current">BTO Management System</li>
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <section class="pd-content section">
+      <div class="container">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <a href="index.html#portfolio" class="pd-back"><i class="bi bi-arrow-left"></i> All Projects</a>
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bto-1.png" alt="">
+          <!-- ── Left: slider ── -->
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="pd-slider-wrap">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  { "loop": true, "speed": 600, "autoplay": { "delay": 5000 }, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide"><img src="assets/img/portfolio/bto-1.png" alt="BTO System — main menu"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/bto-2.png" alt="BTO System — applicant flow"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/bto-3.jpg" alt="BTO System — officer view"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/bto-4.jpg" alt="BTO System — class diagram"></div>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bto-2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bto-3.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bto-4.jpg" alt="">
-                </div>
-
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>BTO Management System</h3>
-              <ul>
-                <li><strong>Category</strong>: Software Design and Development</li>
-                <li><strong>Project date</strong>: April, 2025</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/AaronDDavis/bto-management-system">github.com/AaronDDavis/bto-management-system</a></li>
-              </ul>
+          <!-- ── Right: info card ── -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pd-info-card">
+              <div class="pd-project-title">BTO Management System</div>
+
+              <div class="pd-meta-row">
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Category</span>
+                  <span class="pd-meta-value">Software Design &amp; Development</span>
+                </div>
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Completed</span>
+                  <span class="pd-meta-value">April 2025</span>
+                </div>
+                <!--
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Repository</span>
+                  <span class="pd-meta-value">
+                    <a href="https://github.com/AaronDDavis/bto-management-system" target="_blank" rel="noopener">github.com/AaronDDavis/<wbr>bto-management-system</a>
+                  </span>
+                </div>
+                -->
+              </div>
+
+              <a href="https://github.com/AaronDDavis/bto-management-system" target="_blank" rel="noopener" class="pd-cta-btn pd-cta-primary">
+                <i class="bi bi-github"></i> View on GitHub
+              </a>
+
+              <div class="pd-tech-list">
+                <span class="pd-tech-pill">Java</span>
+                <span class="pd-tech-pill">OOP</span>
+                <span class="pd-tech-pill">ECB Architecture</span>
+                <span class="pd-tech-pill">CSV Persistence</span>
+                <span class="pd-tech-pill">SOLID Principles</span>
+              </div>
             </div>
+          </div>
+
+        </div><!-- /row -->
+
+        <!-- ── Overview ── -->
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-lg-8">
+            <div class="pd-section-label">Overview</div>
+            <h2 class="pd-section-heading">Enterprise architecture, without the enterprise infrastructure</h2>
+            <p class="pd-lead">
+              The BTO Management System simulates Singapore's Build-To-Order public housing process end-to-end (applicant eligibility checks, officer registration workflows, manager approvals, and enquiry management) through a command-line interface. The engineering constraint that makes it interesting: no database engine or json, strict ECB layering enforced at package level, and a requirement to single-handedly produce a system maintainable by a large team. The custom persistence layer solves a real systems problem (forward-reference resolution during CSV loading) using a two-pass hydration model. Three independent finite state machines govern runtime correctness.
+            </p>
           </div>
         </div>
 
-        <div class="row gy-4 mt-1">
+        <!-- Architecture strip -->
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="50">
           <div class="col-lg-12">
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Project Overview</h2>
-              <p>
-                Command-line application for managing Singapore's Build-To-Order (BTO) public housing operations, developed as a demonstration of enterprise software architecture principles. The system handles applicant management, staff workflows, and administrative reporting through a layered architecture.
-              </p>
-
-              <h2>Technical Implementation</h2>
-              <p>
-                <strong>Architecture:</strong> Built using the Entity-Control-Boundary (ECB) pattern to enforce strict separation between presentation (CLI), business logic (controllers), and data persistence (custom CSV-based storage).
-              </p>
-              
-              <p>
-                <strong>Key Engineering Contributions:</strong>
-              </p>
-              <ul>
-                <li>
-                  <strong>Custom Persistence Engine:</strong> Engineered an in-memory database that parses CSV files into relational object graphs, implementing manual data binding to enforce referential integrity without a traditional database.</li>
-                <li>
-                  <span><strong>Design Patterns:</strong> Applied Template Method pattern for consistent UI rendering across entity types, and Factory pattern for object creation, ensuring extensibility and reducing code duplication.
-                  </span>
-                </li>
-                <li>
-                  <strong>Role-Based Access Control:</strong> Implemented distinct user roles (Applicant, Officer, Manager) with role-specific functionalities and permissions.</li>
-                <li>
-                  <strong>SOLID Principles:</strong> Applied Dependency Inversion by coding to interfaces, allowing the data storage mechanism to be swapped without breaking business logic.</li>
-              </ul>
-
-              <p>
-                <strong>Technologies:</strong> Java, CSV-based persistence, Object-Oriented Design
-              </p>
+            <div class="pd-section-label" style="margin-bottom: 14px;">ECB Architecture — Package Structure</div>
+            <div class="pd-arch-strip">
+              <div class="pd-arch-layer">
+                <div class="layer-label">Boundary</div>
+                <div class="layer-name">userinterface/</div>
+                <div class="layer-note">Console menu nav</div>
+              </div>
+              <div class="pd-arch-arrow">→</div>
+              <div class="pd-arch-layer">
+                <div class="layer-label">Boundary</div>
+                <div class="layer-name">display/</div>
+                <div class="layer-note">Output formatting</div>
+              </div>
+              <div class="pd-arch-arrow">→</div>
+              <div class="pd-arch-layer highlight">
+                <div class="layer-label">Control</div>
+                <div class="layer-name">userctrl/</div>
+                <div class="layer-note">Role-specific logic</div>
+              </div>
+              <div class="pd-arch-arrow">→</div>
+              <div class="pd-arch-layer highlight">
+                <div class="layer-label">Control</div>
+                <div class="layer-name">databasemgr/</div>
+                <div class="layer-note">Role-filtered queries</div>
+              </div>
+              <div class="pd-arch-arrow">→</div>
+              <div class="pd-arch-layer">
+                <div class="layer-label">Entity</div>
+                <div class="layer-name">project/ + ..</div>
+                <div class="layer-note">Domain models + FSMs</div>
+              </div>
+              <div class="pd-arch-arrow">→</div>
+              <div class="pd-arch-layer">
+                <div class="layer-label">Entity</div>
+                <div class="layer-name">database/</div>
+                <div class="layer-note">Generic repository</div>
+              </div>
             </div>
+            <p class="pd-arch-constraint">
+              Constraint: Entity packages have zero imports from <code>userctrl</code>, <code>databasemgr</code>, <code>userinterface</code>, or <code>display</code> — verifiable in import statements.
+            </p>
           </div>
+        </div>
 
+        <div class="pd-divider"></div>
+
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Key Engineering Contributions</div>
+          <h2 class="pd-section-heading">Building the database when one isn't allowed</h2>
+
+          <div class="pd-contrib-grid">
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">01</span>
+              <div class="pd-contrib-title">Two-Pass In-Memory Relational Graph</div>
+              <div class="pd-contrib-body">
+                CSV files store only IDs, not object references. Loading is split into two phases: <strong>Phase 1</strong> hydrates all entities with primitive fields only, constructing O(1) ID-to-object maps. <strong>Phase 2</strong> re-parses the same files to resolve cross-entity references and build a bidirectional in-memory object graph, solving forward-reference issues without any database engine.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">02</span>
+              <div class="pd-contrib-title">ECB Architecture with Enforced Layer Isolation</div>
+              <div class="pd-contrib-body">
+                Strict Entity-Control-Boundary separation is enforced structurally, not just by convention. Entity classes have <strong>zero imports</strong> from <code>userctrl</code>, <code>databasemgr</code>, or <code>display</code> packages. Business logic lives exclusively in Control. I/O exclusively in Boundary. Violations are detectable at compile time.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">03</span>
+              <div class="pd-contrib-title">Role-Based State Machines (3 FSMs)</div>
+              <div class="pd-contrib-body">
+                Three independent FSMs govern runtime state: the <strong>Application FSM</strong> with per-subclass transition rules; the <strong>Applicant FSM</strong> with boolean guards (<code>isWithdrawing</code>, etc); and the <strong>Officer FSM</strong> tracking registered/joined/prohibited project sets with date-overlap eligibility checks.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">04</span>
+              <div class="pd-contrib-title">Role-Scoped Repository — Strategy + Repository Patterns</div>
+              <div class="pd-contrib-body">
+                <code>Database&lt;T&gt;</code> is a generic in-memory repository. Access is mediated by role-specific manager classes (<code>ProjectDatabase&shy;Mgr</code>, <code>ApplicationDatabaseMgr</code>) whose <code>getData()</code> methods apply role filters automatically. Managers see all, officers see non-prohibited, applicants see eligibility-filtered results. The same query interface, different results.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">05</span>
+              <div class="pd-contrib-title">Consistent UI Rendering — Template Method</div>
+              <div class="pd-contrib-body">
+                Abstract <code>ItemDisplayer&lt;T&gt;</code> defines a fixed rendering algorithm: <code>dis&shy;play(List&lt;T&gt;)</code> calls abstract <code>display(T)</code> per item. Subclasses override only the entity-specific step. This enforces a consistent UI contract across all entity types while eliminating duplicated formatting logic.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">06</span>
+              <div class="pd-contrib-title">Facade + Factory for System Orchestration</div>
+              <div class="pd-contrib-body">
+                <code>BTOManagementSystem</code> acts as a Facade, coordinating the two-phase load/save sequence across 6 entity types without exposing that complexity to callers. Object creation uses a Factory: <code>Application&shy;Mgr.create()</code> switches on an <code>APPLICATION_TYPE</code> enum, decoupling instantiation from client code and keeping constructors private to their domains.
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
-
-    </section><!-- /Portfolio Details Section -->
+    </section>
 
   </main>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -192,10 +261,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

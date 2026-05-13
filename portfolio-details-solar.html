@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BTO Management System — Aaron Davis</title>
+  <meta name="description" content="CLI-based public housing management system using ECB architecture and a custom CSV persistence engine.">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/solar.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="Aaron Davis" class="img-fluid rounded-circle">
+    </div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Aaron Davis</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/aaron-daniel-davis" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/AaronDDavis" class="github" title="GitHub"><i class="bi bi-github"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#experience"><i class="bi bi-briefcase navicon"></i>Experience</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i>Skills</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-code-square navicon"></i>Projects</a></li>
+        <li><a href="index.html#achievements"><i class="bi bi-award navicon"></i>Achievements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Singapore Solar Feasibility Analysis</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Projects</a></li>
+            <li class="current">Singapore Solar Feasibility Analysis</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section class="pd-content section">
+      <div class="container">
+
+        <a href="index.html#portfolio" class="pd-back"><i class="bi bi-arrow-left"></i> All Projects</a>
+
+        <div class="row gy-4">
+
+          <!-- ── Left: slider ── -->
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="pd-slider-wrap">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  { "loop": true, "speed": 800, "autoplay": { "delay": 5000 }, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide"><img src="assets/img/portfolio/solar-1.png" alt="Solar Analysis — slide 1"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/solar-2.png" alt="Solar Analysis — slide 2"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Right: info card ── -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pd-info-card">
+              <div class="pd-project-title">Singapore Solar Feasibility Analysis</div>
+
+              <div class="pd-meta-row">
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Category</span>
+                  <span class="pd-meta-value">Data Analytics &amp; Modeling</span>
+                </div>
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Completed</span>
+                  <span class="pd-meta-value">April 2026</span>
+                </div>
+                <!--
+                <div class="pd-meta-item">
+                  <span class="pd-meta-label">Repository</span>
+                  <span class="pd-meta-value">
+                    <a href="https://github.com/AaronDDavis/solar-sustainability-analysis" target="_blank" rel="noopener">github.com/AaronDDavis/<wbr>solar-sustainability-analysis</a>
+                  </span>
+                </div>
+                -->
+              </div>
+
+              <a href="https://github.com/AaronDDavis/solar-sustainability-analysis" target="_blank" rel="noopener" class="pd-cta-btn pd-cta-primary">
+                <i class="bi bi-github"></i> View on GitHub
+              </a>
+
+              <div class="pd-tech-list">
+                <span class="pd-tech-pill">Python</span>
+                <span class="pd-tech-pill">Pandas</span>
+                <span class="pd-tech-pill">Linear Regression</span>
+                <span class="pd-tech-pill">Time-Series</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+
+        <!-- ── Overview ── -->
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-lg-8">
+            <div class="pd-section-label">Overview</div>
+            <h2 class="pd-section-heading">Can solar energy realistically meet Singapore's household demand?</h2>
+            <p class="pd-lead">
+              This project investigates whether photovoltaic systems can achieve Singapore's Green Plan 2030 and net-zero 2050 targets, framed as a data science question rather than a policy assumption. Nine datasets spanning 2005–2025 were integrated across weather, consumption, and solar generation records to quantify the energy gap, identify what's actually driving consumption growth, and model when (or whether) break-even is achievable.
+            </p>
+            <p class="pd-lead" style="margin-top: 14px;">
+              The answer: under current trends, solar meets just <strong>8.3%</strong> of household demand in 2025, with break-even projected at <strong>2144</strong>. Targeted interventions can move that to 2099.
+            </p>
+            <p class="pd-course-name">
+              Course project · SC3021 Data Science Fundamentals · with Andrea Nicho Aruldass &amp; Renee Teo Rui Ning
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Key findings strip ── -->
+        <div class="row mt-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-12">
+            <div class="pd-section-label" style="margin-bottom: 14px;">Key Findings</div>
+            <div class="pd-findings-strip">
+              <div class="pd-finding">
+                <div class="pd-finding-val">8.3%</div>
+                <div class="pd-finding-lbl">of household demand met by solar in 2025</div>
+              </div>
+              <div class="pd-finding">
+                <div class="pd-finding-val">2144</div>
+                <div class="pd-finding-lbl">baseline break-even year at current growth rates</div>
+              </div>
+              <div class="pd-finding">
+                <div class="pd-finding-val">2099</div>
+                <div class="pd-finding-lbl">break-even with 15% household efficiency gains</div>
+              </div>
+              <div class="pd-finding">
+                <div class="pd-finding-val">+108 GWh</div>
+                <div class="pd-finding-lbl">per year structural consumption growth rate</div>
+              </div>
+              <div class="pd-finding">
+                <div class="pd-finding-val">1.66%</div>
+                <div class="pd-finding-lbl">regression model error vs. official statistics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- ── Analytical Framework ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Analytical Framework</div>
+          <h2 class="pd-section-heading">Four layers of analysis, each answering a different question</h2>
+
+          <div class="pd-analytics-layers">
+            <div class="pd-analytics-layer">
+              <div class="pd-analytics-num">1</div>
+              <div class="pd-analytics-body">
+                <div class="pd-analytics-title">Descriptive</div>
+                <div class="pd-analytics-sub">What happened?</div>
+                <div class="pd-analytics-desc">Time-series decomposition isolating trend, seasonal, and residual components. Identified +108 GWh/year linear growth, symmetrical May–July cooling peaks, and residual spikes at 2011 (El Niño) and 2021 (COVID-19 WFH).</div>
+              </div>
+            </div>
+            <div class="pd-analytics-layer">
+              <div class="pd-analytics-num">2</div>
+              <div class="pd-analytics-body">
+                <div class="pd-analytics-title">Diagnostic</div>
+                <div class="pd-analytics-sub">Why did it happen?</div>
+                <div class="pd-analytics-desc">Fishbone diagrams and 5 Whys analysis to attribute consumption drivers: work-from-home adoption, appliance proliferation, urban heat island effect (+2–4°C), and variable building insulation. Events correlated against meteorological records.</div>
+              </div>
+            </div>
+            <div class="pd-analytics-layer">
+              <div class="pd-analytics-num">3</div>
+              <div class="pd-analytics-body">
+                <div class="pd-analytics-title">Predictive</div>
+                <div class="pd-analytics-sub">What will happen?</div>
+                <div class="pd-analytics-desc">Linear regression on 70/30 chronological split (2005–2019 train, 2020–2025 test). RMSE: 132.24 GWh, error: 1.66%. 10-year forecast projects ~9,200 GWh by 2035. ARIMA rejected due to overfitting risk on a 21-year dataset.</div>
+              </div>
+            </div>
+            <div class="pd-analytics-layer">
+              <div class="pd-analytics-num">4</div>
+              <div class="pd-analytics-body">
+                <div class="pd-analytics-title">Prescriptive</div>
+                <div class="pd-analytics-sub">What should be done?</div>
+                <div class="pd-analytics-desc">Scenario modelling for policy interventions: aggressive solar expansion (870 MW → 3,000 MW), time-of-use pricing, cool roof mandates, and household efficiency measures. Each modelled for impact on break-even year.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-divider"></div>
+
+        <!-- ── Engineering contributions ── -->
+        <div data-aos="fade-up">
+          <div class="pd-section-label">Key Engineering Contributions</div>
+          <h2 class="pd-section-heading">Where the technical decisions were made</h2>
+
+          <div class="pd-contrib-grid">
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">01</span>
+              <div class="pd-contrib-title">End-to-End Data Pipeline</div>
+              <div class="pd-contrib-body">
+                Ingested 9 heterogeneous datasets from SP Group, EMA, NASA POWER, and Meteorological Service Singapore. A structured profiling checklist was applied before any transformation: type consistency, missing value thresholding (&lt;5%), temporal overlap validation, IQR-based outlier detection, and format standardisation across date formats and energy units.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">02</span>
+              <div class="pd-contrib-title">Physics-Informed Solar Output Model</div>
+              <div class="pd-contrib-body">
+                Solar output estimated using: <code>Capacity × Sunshine Hours × Performance Ratio × Days</code>, with a conservative PR of 0.85 to account for Singapore's real-world efficiency losses of 10–15% below ideal irradiance. Quarterly capacity data was interpolated to monthly resolution before applying the formula.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">03</span>
+              <div class="pd-contrib-title">Consumption Reconstruction Pipeline</div>
+              <div class="pd-contrib-body">
+                National household consumption estimated as: <code>Σ(Household Count × Avg Consumption × 12)</code> across 6 standardised dwelling types, aggregated from district-level to national scope. A 1.095× scaling factor aligned outputs with official Statista benchmarks. Final validation: RMSE 132.24 GWh, percentage error 1.66%.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">04</span>
+              <div class="pd-contrib-title">Regression Forecasting &amp; Break-Even Modelling</div>
+              <div class="pd-contrib-body">
+                70/30 chronological train/test split, not random, to simulate genuine out-of-sample forecasting. Coefficients: slope = 108.11 GWh/year. Break-even modelled by projecting solar growth (exponential curve fitted from 2008–2025 policy-driven expansion) against consumption trend. Policy scenarios modelled as additive offsets to the consumption trajectory.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">05</span>
+              <div class="pd-contrib-title">Anomaly Attribution — COVID &amp; El Niño</div>
+              <div class="pd-contrib-body">
+                Time-series residuals were cross-referenced against meteorological records and historical event logs to distinguish structural from transient variance. The 2021 spike (+~300 GWh above trend) was attributed to COVID-19 WFH adoption; the 2011 residual to El Niño temperature extremes. Distinguishing these prevents the model from encoding noise as signal.
+              </div>
+            </div>
+
+            <div class="pd-contrib-card">
+              <span class="pd-contrib-num">06</span>
+              <div class="pd-contrib-title">Weather-Energy Correlation Analysis</div>
+              <div class="pd-contrib-body">
+                Pearson correlation between monthly temperature and per-account consumption: r = 0.073, p = 0.22 — statistically insignificant. The finding is substantively interesting: unlike temperate climates, Singapore's year-round warmth means AC usage is baseline, not temperature-responsive. This null result is a key insight, not a failure.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

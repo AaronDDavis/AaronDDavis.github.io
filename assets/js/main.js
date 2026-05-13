@@ -1,11 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -30,7 +22,6 @@
         headerToggle();
       }
     });
-
   });
 
   /**
@@ -112,6 +103,8 @@
 
   /**
    * Animate the skills items on reveal
+   * (kept for compatibility; index.html uses tag-cloud skills but
+   *  .progress bars may still exist in other templates)
    */
   let skillsAnimation = document.querySelectorAll('.skills-animation');
   skillsAnimation.forEach((item) => {
@@ -164,7 +157,6 @@
         }
       }, false);
     });
-
   });
 
   /**
@@ -187,6 +179,37 @@
   window.addEventListener("load", initSwiper);
 
   /**
+   * Experience / Education tab switcher (index.html)
+   * Replaces the inline switchTab() function previously defined in the
+   * HTML <script> tag — centralised here so the HTML stays clean.
+   */
+  window.switchTab = function(tab, btn) {
+    document.querySelectorAll('.tl-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.timeline-tab').forEach(b => b.classList.remove('active'));
+    const pane = document.getElementById('tl-' + tab);
+    if (pane) pane.classList.add('active');
+    if (btn) btn.classList.add('active');
+  };
+
+  /**
+   * Keyboard accessibility for timeline tabs
+   * Allows left/right arrow key navigation between tab buttons.
+   */
+  document.querySelectorAll('.timeline-tab').forEach(function(tab) {
+    tab.addEventListener('keydown', function(e) {
+      const tabs = Array.from(document.querySelectorAll('.timeline-tab'));
+      const idx = tabs.indexOf(this);
+      if (e.key === 'ArrowRight' && idx < tabs.length - 1) {
+        tabs[idx + 1].focus();
+        tabs[idx + 1].click();
+      } else if (e.key === 'ArrowLeft' && idx > 0) {
+        tabs[idx - 1].focus();
+        tabs[idx - 1].click();
+      }
+    });
+  });
+
+  /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
   window.addEventListener('load', function(e) {
@@ -206,6 +229,8 @@
 
   /**
    * Navmenu Scrollspy
+   * Extended to handle detail pages where nav links point to index.html#section.
+   * On detail pages (no matching hash sections), scrollspy silently skips.
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
@@ -213,7 +238,7 @@
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);
-      if (!section) return;
+      if (!section) return; // gracefully skip on detail pages
       let position = window.scrollY + 200;
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
@@ -221,9 +246,24 @@
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * Highlight active nav item on detail pages
+   * Since detail pages don't have in-page sections to scrollspy against,
+   * mark the Projects nav link as active on page load if we're on a
+   * portfolio-details-* page.
+   */
+  window.addEventListener('load', function() {
+    const isDetailPage = document.body.classList.contains('portfolio-details-page');
+    if (isDetailPage) {
+      navmenulinks.forEach(link => link.classList.remove('active'));
+      const projectsLink = document.querySelector('.navmenu a[href*="#portfolio"]');
+      if (projectsLink) projectsLink.classList.add('active');
+    }
+  });
 
 })();
